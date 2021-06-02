@@ -1,0 +1,137 @@
+@media screen and (min-width: 0px) {
+		
+	header {
+		height: 200px;
+		background-position: top;
+	}
+	
+	header p{
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		font-size: 18px;
+		color: #ffffff;
+		text-shadow: 1px 2px 3px #000;
+	}
+	
+	.objeto {
+		position:fixed;
+		display: block;
+		bottom: 10px;
+		right: 10px;
+	}
+	
+	#menu-superior{
+		display: block;
+	}
+	
+	nav {
+		text-align:center;
+	}
+	
+	#logo-menu span{
+		display: none;
+	}
+	
+	nav ul li {
+		display: block;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border: 0.5px solid #062C51;
+	}
+	
+	.menu-suspenso{
+		position: static;
+		transition: 0.5s;
+	}
+	
+	.menubtn:active .menu-suspenso{
+		display: none;
+	}
+	
+	section.primeira{
+		background-position: top;
+		text-align: center;
+	}
+	
+	.img-entrada img{
+		display: none;
+	}
+	
+	.texto-entrada{
+		padding-bottom: 20px;
+	}
+	
+	.texto-entrada p{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+    
+    .img-segunda img{
+		display: none;
+	}
+	
+	.texto-segunda{
+		padding-bottom: 100px;
+		text-align:center ;		
+	}
+	
+	.texto-segunda p{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {
+
+    .objeto{
+        display: none;
+    }
+
+    header {
+		height: 400px;
+		background-position: center;
+	}
+    
+    nav{
+        text-align:center;
+    }
+
+    #menu-superior{
+        display: inline-block;
+        width: 90%;
+    }
+
+    #logo-menu span{
+        display: inherit;
+        font-family: Anton, sans serif;
+        color: #ffffff;
+        font-size: 20px;
+        float: left;
+        padding: 15px;
+    }
+
+    nav ul{
+        float: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+        border: none;
+        padding: 15px;
+    }
+
+    nav ul li a{
+        padding: 13px;
+    }
+
+    .menu-suspenso{
+        position: absolute;
+        margin-top: 10px;
+    }
+
+    .texto-segunda{
+        padding-bottom: 100px;
+        text-align:right ;		
+    }
+}
