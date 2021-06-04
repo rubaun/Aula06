@@ -246,3 +246,44 @@ footer p{
 	margin: 0;
 	padding: 0;
 }
+
+.secao-form{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.formulario{
+	width: 700px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #062C51;
+	border-radius: 5px;
+}
+
+.formulario label{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1em;
+	margin: 10px;
+	padding-bottom: 10px;
+}
+
+.formulario input, textarea{
+	width: inherit;
+	border: 2px solid #215587;
+	border-radius: inherit;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	resize: none;
+	outline: none;
+
+}
+
+.formulario input:focus-within, textarea:focus-within{
+	border: 2px solid lightskyblue;
+}
+
+.formulario.erro{
+	border: 2px solid lightsalmon;
+}
