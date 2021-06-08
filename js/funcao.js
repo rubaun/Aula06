@@ -42,8 +42,8 @@ var calculoCaixaVolume = calculaAreaVolume(10,20,30)[1];
 document.write('<br> Área da Caixa é: ' + calculoCaixaArea);
 document.write('<br> Volume da Caixa é: ' + calculoCaixaVolume);
 
-//Podemos chamar a função diretamente na declaração da variável. Isso é uma função anônima.
-
+/*Podemos chamar a função diretamente na declaração da variável.
+Isso é uma função anônima.*/
 var areaCaixa = (function() {
     var calculoarea = 10 * 20;
     return calculoarea;
