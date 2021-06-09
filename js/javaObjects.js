@@ -25,14 +25,14 @@ document.write('<br><br> Troca um ou mais caracteres por outros: ' + saudacao.re
 
 //Numbers
 
-var numero = 10.23450;
+var numero = 4.3;
 var expoente = 100000000;
 
 document.write('<br><br>Verifica se não é um número: ' + isNaN(numero));
 
-document.write('<br><br>Arredonda com a quantidade de casas decimais depois da vírgula: ' + numero.toFixed(2));
+document.write('<br><br>Arredonda com a quantidade de casas decimais depois da vírgula: ' + numero.toFixed(3));
 
-document.write('<br><br>Arredonda com a quantidade de casas totais: ' + numero.toPrecision(3));
+document.write('<br><br>Arredonda com a quantidade de casas totais: ' + numero.toPrecision(4));
 
 document.write('<br><br>Retorna uma notação exponencial: ' + expoente.toExponential(1));
 
@@ -49,5 +49,8 @@ document.write('<br><br>Arredonda o número para baixo: ' + Math.floor(numero));
 document.write('<br><br>Raiz Quadrada de 9: ' + Math.sqrt(9));
 
 document.write('<br><br>Gera um número aleatório: ' + Math.random());
+
+//Date
+
 
 
