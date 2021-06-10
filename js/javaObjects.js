@@ -50,7 +50,7 @@ document.write('<br><br>Raiz Quadrada de 9: ' + Math.sqrt(9));
 
 document.write('<br><br>Gera um número aleatório: ' + Math.random());
 
-//Date
+document.write('<br><br>Seu número da sorte é: ' + Math.floor(Math.random() * 11));
 
 
 
