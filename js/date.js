@@ -9,11 +9,7 @@ new Date(date string)
 
 //Exibe a mensagem da promoção
 var mensagem = document.getElementById('mensagem');
-mensagem.innerHTML = ofertaExpira(dataDate);
-
-//diadaSemana = new Date(dataDate.getTime() + 604800000);
-
-//document.getElementById('mensagem').textContent = diadaSemana.getDay();
+mensagem.innerHTML = ofertaExpira();
 
 //O objeto date armazena o valor da data como milisegundos
 //86 400 000 milisegundos são 24hs
@@ -21,7 +17,7 @@ mensagem.innerHTML = ofertaExpira(dataDate);
 function ofertaExpira(){
     var diaDaSemana, dia, data, mes, ano, nomeDia, nomeMes;
 
-    diaDaSemana = new Date(dataDate.getTime() + 604800000);
+    diaDaSemana = new Date(dataDate.getTime() + 1000 * 60 * 60 * 24);
    
     nomeDia = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
 
@@ -36,7 +32,7 @@ function ofertaExpira(){
 
     ano = diaDaSemana.getFullYear();
 
-    msgTermina = 'A nossa oferta termina ';
+    msgTermina = 'Oferta termina ';
     msgTermina += dia + ' <br>(' + data + ' de ' + mes + ' de ' + ano + ')';
 
     return msgTermina;
