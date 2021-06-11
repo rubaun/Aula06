@@ -3,82 +3,7 @@
 	<head>
 		<meta charset="utf-8">
         <title>Objeto</title>
-        <style>
-            body{
-                box-sizing: border-box;
-                text-align: center;
-                background-image: url('img/resort.webp');
-                background-position: center;
-                background-size: 100%;
-                background-repeat: no-repeat;
-            }
-            .nome-hotel{
-                font-family: fantasy;
-                color: white;
-                font-size: 3.5em;
-                text-shadow: 1px 1px 3px #333;
-            }
-            .dados-hotel{
-                margin: 0 auto;
-                padding: 50px;
-                width: 350px;
-                height: 300px;
-                background-color: #333;
-                font-size: 1.5em;
-                color: chocolate;
-                border-radius: 10px;
-            }
-            .tituloh2{
-                margin: 0;
-                padding: 15px;
-            }
-            .valores{
-                margin: 0;
-                padding-bottom: 15px;
-                color:white;
-            }
-            .botao{
-                margin: 0 auto;
-                width: 300px;
-                height: 70px;
-                background-color: tomato;
-                border-radius: 5px;
-                color: white;
-            }
-            .botao:hover{
-                background-color: brown;
-            }
-            .link{
-                color: white;
-                text-decoration: none;
-                position: relative;
-                top:25%;
-            }
-            #promocao{
-                position: fixed;
-                bottom: 0;
-                right: 10px;
-                background-color: brown;
-                width: 300px;
-                height: 100px;
-                color: white;
-                padding-bottom: 10px;
-                border-radius: 5px;
-            }
-            #img-espanto{
-                position: fixed;
-                bottom: 110px;
-                right: -25px;
-            }
-            #mensagem{
-                padding: 10px;
-                margin: 0;
-            }
-            #contador{
-                font-size: 50px;
-                margin: 0;
-            }
-        </style>
+        <link href="css/cssHotel.css" rel="stylesheet">
     </head>
     <body>
         <h1 id="nome-hotel" class="nome-hotel">Nome Hotel</h1>
@@ -88,8 +13,7 @@
             <h2 class="tituloh2">Quartos Reservados</h2>
             <h3 id="reservados-hotel" class="valores"></h3>
             <div class="botao">
-                <a href="#" onclick="reservaQuartos()" 
-                class="link">Reservar Quarto</a>
+                <a href="contatoHotel.html" class="link">Reservar Quarto</a>
             </div>
         </div>
 
@@ -102,6 +26,6 @@
 
         <script src="js/objeto.js"></script>
         <script src="js/date.js"></script>
-        <!-- <script src="js/timer.js"></script> -->
+        <script src="js/timer.js"></script>
     </body>
 </html>
