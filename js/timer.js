@@ -1,4 +1,4 @@
-var contador = new Date(dataDate.getTime() + (1000 * 60 * 60 * 24 * 7));
+var contador = new Date(dataDate.getTime() + (1000 * 60 * 60 * 24));
 
 var x = setInterval(function(){
 

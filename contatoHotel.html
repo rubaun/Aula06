@@ -9,6 +9,17 @@
         <h1 id="nome-hotel" class="nome-hotel">Nome Hotel</h1>
         <div class="dados-hotel">
             <form id="form-contato" class="formulario">
+                <label>Escolha sua Suite</label>
+                
+                <input type="radio" name="suite" value="master">
+                <label for="master">Master</label>
+               
+                <input type="radio" name="suite" value="padrao">
+                <label for="padrao">Padrão</label>
+                
+                <input type="radio" name="suite" value="chinfrin">
+                <label for="chinfrin">Chinfrin</label>
+
                 <label for="nome">Nome:</label>
                 <br>
                 <input type="text" id="nome" name="nome" required>
@@ -29,6 +40,13 @@
                 <br>
                 <input type="tel" id="tel" name="tel" required>
                 <br>
+                <label>Refeição</label>
+                <input type="checkbox" name="cafe" value="cafe">
+                <label for="cafe">Café</label>
+                <input type="checkbox" name="almoco" value="almoco">
+                <label for="alomoco">Almoço</label>
+                <input type="checkbox" name="jantar" value="jantar">
+                <label for="jantar">Jantar</label>
                 <input type="submit" value="Enviar">
             </form>
         </div>
