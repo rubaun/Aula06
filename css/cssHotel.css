@@ -17,7 +17,7 @@ body{
     margin: 0 auto;
     padding: 20px;
     width: 350px;
-    height: 410px;
+    height: auto;
     background-color: #333;
     font-size: 1.5em;
     color: chocolate;
@@ -31,7 +31,7 @@ body{
     height: auto;
     text-align: left;
 }
-.formulario input{
+.formulario input, select{
     width: 100%;
     border: 1px solid chocolate;
     border-radius: 5px;
@@ -42,12 +42,17 @@ body{
     resize: none;
     outline: none;
 }
+.formulario input[type='radio'], input[type='checkbox']{
+    width: auto;
+
+}
 .formulario input:focus-within{
     border:2px solid tomato;
 }
 label{
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
 }
 .tituloh2{
     margin: 0;

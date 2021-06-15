@@ -9,17 +9,14 @@
         <h1 id="nome-hotel" class="nome-hotel">Nome Hotel</h1>
         <div class="dados-hotel">
             <form id="form-contato" class="formulario">
-                <label>Escolha sua Suite</label>
-                
+                <label>Escolha sua Suite:</label><br>
                 <input type="radio" name="suite" value="master">
                 <label for="master">Master</label>
-               
                 <input type="radio" name="suite" value="padrao">
                 <label for="padrao">Padrão</label>
-                
                 <input type="radio" name="suite" value="chinfrin">
                 <label for="chinfrin">Chinfrin</label>
-
+                <br>
                 <label for="nome">Nome:</label>
                 <br>
                 <input type="text" id="nome" name="nome" required>
@@ -40,23 +37,27 @@
                 <br>
                 <input type="tel" id="tel" name="tel" required>
                 <br>
-                <label>Refeição</label>
-                <input type="checkbox" name="cafe" value="cafe">
+                <label>Refeição Diária:</label>
+                <br>
+                <input type="checkbox" name="cafe" value="cafe" checked>
                 <label for="cafe">Café</label>
                 <input type="checkbox" name="almoco" value="almoco">
                 <label for="alomoco">Almoço</label>
                 <input type="checkbox" name="jantar" value="jantar">
                 <label for="jantar">Jantar</label>
+                <br>
+                <label for="especial">Atendimento Especial:</label>
+                <select name="especial">
+                    <option value="nao" selected>Não</option>
+                    <option value="auditivo">Deficiente Auditivo</option>
+                    <option value="cadeirante">Cadeira de Rodas</option>
+                    <option value="idoso">Maior de 65 anos</option>
+                    <option value="gestante">Gestante</option>
+                </select>
+                <br>
                 <input type="submit" value="Enviar">
             </form>
         </div>
-
-        <div id="promocao">
-            <h2 id="mensagem"></h2>
-            <h2 id='contador'></h2>
-        </div>
-        <img src="img/espanto.png" width="400px" id="img-espanto">
-
 
         <script src="js/objeto.js"></script>
         <script src="js/date.js"></script>
