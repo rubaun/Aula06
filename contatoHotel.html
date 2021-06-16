@@ -45,7 +45,7 @@
                 <div class="form-col-2">
                     <label for="cpf">CPF:</label>
                     <br>
-                    <input type="text" id="cpf" name="cpf" pattern="/(\d{3})(\d{3})(\d{3})(\d{2})/" required>
+                    <input type="text" id="cpf" name="cpf" pattern="\d{5}-\d{3}" required>
                     <br>
                     <label for="nascimento">Data de Nascimento:</label>
                     <br>
@@ -54,7 +54,7 @@
                     <label for="tel">Telefone:</label>
                     <br>
                     <input type="tel" id="tel" name="tel" placeholder="(xx)9xxxx-xxxx" 
-                    pattern="^\(\d{2}\)(\d{5})\-(\d{4})$" required>
+                     required>
                     <br>
                     <label>Refeição Diária:</label>
                     <br>
@@ -76,7 +76,7 @@
                     <br>
                     <label for="senha">Crie uma senha:</label>
                     <input type="password" name="senha" placeholder="Crie sua senha"
-                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+                     required>
                 </div>
                 <br>
                 <br>
