@@ -29,19 +29,11 @@ var cpf = document.getElementById('cpf');
 cpf.addEventListener('blur', function(){
     var cpfValor = cpf.value;
     var cpfCompleto = cpfValor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, 
-    function( regex, argumento1, argumento2, argumento3, argumento4 ) {
+    function( valorRegex, argumento1, argumento2, argumento3, argumento4 ) {
            return argumento1 + '.' + argumento2 + '.' + argumento3 + '-' + argumento4;
    })  
    cpf.value = cpfCompleto; 
    
-})
-
-cpf.addEventListener('input', function(){
-    if(cpf.validity.patternMismatch){
-        cpf.setcustomValidity('Por favor, digite apenas números, sem pontos e sem traço.')
-    } else{
-        cpf.setcustomValidity(' ');
-    }
 })
 
 
