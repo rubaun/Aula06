@@ -1,7 +1,8 @@
 
 //De acordo com a suite escolhida o hospede já tem marcados as refeições
 
-var suiteEscolhida = [document.forms[0].elements[0], document.forms[0].elements[1], document.forms[0].elements[2]];
+var suiteEscolhida = [document.forms[0].elements[0], document.forms[0].elements[1], 
+document.forms[0].elements[2]];
 
 for (var i=[0]; i < suiteEscolhida.length; i++){
 
@@ -35,7 +36,7 @@ function validaNome(){
     var nomeValido = expNome.exec(nomeCompleto.value);
     var msgNome = '';
 
-    if(!nomeValido || undefined){
+    if(!nomeValido){
         msgNome = 'Digite somente letras. E o nome completo!';
     }
 
