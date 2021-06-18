@@ -35,6 +35,8 @@ valorCep.addEventListener('blur',function(){
 
 //E-mail ([\w].{3,20})@([\w].+)\.([\w]{3,5})
 
-// CPF (\d{3})[\.]?(\d{3})[\.]?(\d{3})[-]?(\d{2})
+//CPF (\d{3})[\.]?(\d{3})[\.]?(\d{3})[-]?(\d{2})
 
 //PLACA PADRÃO ANTIGO [a-zA-Z]{3}-\d{4}
+
+//SenhaForte ^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*[!@#&$*?]).{8,20}$

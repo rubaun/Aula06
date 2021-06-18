@@ -5,15 +5,19 @@ var btnSubmit = document.getElementsByName('enviar');
 function verificaCep(){
    
     var verificaCep = expCep.test(valorCep.value); //Inicializa 
-
+    var mensagem = '';
+    
+    
     if(verificaCep){
         valorCep.className = 'azul';
-        btnSubmit[0].disabled = false;
+        //btnSubmit[0].disabled = false;
+        
     }else{
         valorCep.className = 'vermelho';
-        btnSubmit[0].disabled = true;
+        mensagem = 'Digite o CEP com apenas números.';
+        //btnSubmit[0].disabled = true;
     }
-
+    valorCep.setCustomValidity(mensagem);
 
     console.log(verificaCep);
 }
