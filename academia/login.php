@@ -1,3 +1,26 @@
+<?php
+
+#Conexão com o BD
+$servidor = 'localhost';
+$usuario = 'web';
+$senha = 'K52tg_o3';
+$banco = 'academiaforte';
+
+#Conecta
+$link = mysqli_connect($servidor,$usuario,$senha,$banco) 
+or die('Erro1: '.mysqli_error($link));
+
+$sql = "SELECT * FROM cadastro WHERE ";
+$sql .= "email = ".$_POST['user'];
+
+$result = mysqli_query($link, $sql);
+
+$valor = mysqli_fetch_array($result);
+
+    $email = $valor['email'];
+    $senha = $valor['senha'];
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -16,7 +39,7 @@
                             <small>Área do Cliente</small>
                         </div>
                         <div class="mb-3">
-                            <label for="name" class="form-label">Usuário</label>
+                            <label for="user" class="form-label">E-mail</label>
                             <input type="text" name="user" class="form-control">
                         </div>
                         <div class="mb-3">
