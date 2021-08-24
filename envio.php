@@ -2,7 +2,7 @@
 
 if($_REQUEST["action"] == "sendmail")
 {
-    $mailContact = "Seu nome <contato@mundocriativo.art.br>";
+    $mailContact = "Seu nome <email@dominio.com.br>";
     $mailAuthor = $_POST["nome"];
     $mailReply = $_POST["email"];
     $mailCall = $_POST["tel"];
